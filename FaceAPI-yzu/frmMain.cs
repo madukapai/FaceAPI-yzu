@@ -12,24 +12,45 @@ namespace FaceAPI_yzu
 {
     public partial class frmMain : Form
     {
-        public frmMain() => InitializeComponent();
+        public frmMain()
+        {
+            InitializeComponent();
+        }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void detectToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmDetect());
+        private void detectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmDetect());
+        }
 
-        private void verifyToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmVerify());
+        private void verifyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmVerify());
+        }
 
-        private void idenityToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmIdentify());
+        private void idenityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmIdentify());
+        }
 
-        private void personalGroupToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmUsers());
+        private void personalGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmUsers());
+        }
 
-        private void captureToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmCapture());
+        private void captureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmCapture());
+        }
 
-        private void camToolStripMenuItem_Click(object sender, EventArgs e) => OpenForm(new Forms.frmCam());
+        private void camToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Forms.frmCam());
+        }
 
         private void OpenForm(Form objFrm)
         {
